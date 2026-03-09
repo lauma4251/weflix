@@ -6,7 +6,7 @@ const VideoPlayer = ({ tvId, season = 1, episode = 1 }) => {
 
     useEffect(() => { setActive(false); }, [tvId, season, episode]);
 
-    const iframeSrc = `https://vidlink.pro/tv/${tvId}/${season}/${episode}?chromecast=false&nextButton=false`;
+    const iframeSrc = `https://vidcore.net/tv/${tvId}/${season}/${episode}?chromecast=false&nextButton=false`;
 
     return (
         <div className="relative w-full h-full">

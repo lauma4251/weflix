@@ -47,6 +47,7 @@ export default function HomePage() {
           title="Trending Movies"
           type="movie"
           variant="trending"
+		  timeWindow="day"
           accent="#ef4444"
           onSelect={handleSelect}
           onSeeAll={goMovies}
@@ -54,7 +55,8 @@ export default function HomePage() {
         <TrendingRow
           title="Top 10 Movies This Week"
           type="movie"
-          variant="popular"
+          variant="trending"
+		  timeWindow="week"
           showRank
           originalLanguage={['en', 'zh', 'ko', 'ja']}
           accent="#ef4444"

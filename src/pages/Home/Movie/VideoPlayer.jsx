@@ -14,12 +14,12 @@ const VideoPlayer = ({ movieId }) => {
         <div className="relative w-full h-full">
             <iframe
                 src={iframeSrc}
+                title={`TV Show: ${tvId} - S${season}E${episode}`}
+                className="absolute inset-0 w-full h-full border-0"
+                allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
-                title="Movie Stream"
                 loading="lazy"
                 referrerPolicy="no-referrer"
-                className="absolute inset-0 w-full h-full"
-                style={{ userSelect: 'none' }}
             />
         </div>
     );

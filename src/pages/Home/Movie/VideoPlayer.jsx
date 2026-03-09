@@ -8,7 +8,7 @@ const VideoPlayer = ({ movieId }) => {
 
     if (!movieId) return null;
 
-    const iframeSrc = `https://vidlink.pro/movie/${movieId}?nextbutton=true&autoplay=true&muted=false`;
+    const iframeSrc = `https://vidcore.net/movie/${movieId}?chromecast=false&nextButton=false`;
 
     return (
         <div className="relative w-full h-full">
